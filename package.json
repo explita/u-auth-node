@@ -1,0 +1,37 @@
+{
+  "name": "@explita/u-auth-node",
+  "version": "0.0.4",
+  "author": "Explita",
+  "license": "MIT",
+  "description": "A simple authentication library for Express.js",
+  "main": "./dist/index.js",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "auth",
+    "authentication",
+    "express",
+    "session",
+    "token",
+    "otp"
+  ],
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
